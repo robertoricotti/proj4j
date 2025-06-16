@@ -35,6 +35,9 @@ public class ProjectionException extends Proj4jException {
         super(message);
     }
 
+	public Proj4jException(String message, Exception cause) {
+		super(message, cause);
+	}
     public ProjectionException(Projection proj, String message) {
         this(proj.toString() + ": " + message);
     }
